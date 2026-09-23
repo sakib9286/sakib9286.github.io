@@ -3,7 +3,7 @@
 Personal academic website for Dr. Mohd Sakib, Assistant Professor, School of Computer Science,
 UPES University, Dehradun, India.
 
-**Live site:** https://USERNAME.github.io/
+**Live site:** https://sakib9286.github.io/
 
 ## What is here
 
