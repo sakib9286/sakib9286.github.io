@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Mohd Sakib | Deep Learning &amp; Time-Series Forecasting</title>
+<meta name="description" content="Dr. Mohd Sakib is an Assistant Professor in the School of Computer Science at UPES University, Dehradun. His research covers ensemble deep learning, time-series forecasting, and explainable AI.">
+<meta name="author" content="Mohd Sakib">
+<link rel="canonical" href="https://mohdsakib.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr. Mohd Sakib | Deep Learning &amp; Time-Series Forecasting">
+<meta property="og:description" content="Assistant Professor, School of Computer Science, UPES University, Dehradun. Ensemble deep learning, time-series forecasting, and explainable AI.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:url" content="https://mohdsakib.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dr. Mohd Sakib">
+<meta name="twitter:description" content="Assistant Professor, School of Computer Science, UPES University, Dehradun.">
+<meta name="twitter:image" content="assets/img/og-cover.jpg">
+
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322d3ee'/><stop offset='1' stop-color='%23818cf8'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%230a0f1c' text-anchor='middle'>MS</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.nav-links{position:static!important;opacity:1!important;pointer-events:auto!important;transform:none!important}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohd Sakib",
+  "honorificPrefix": "Dr.",
+  "jobTitle": "Assistant Professor",
+  "email": "mailto:mohd.sakib@ddn.upes.ac.in",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "UPES University, Dehradun, India" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Aligarh Muslim University" },
+  "knowsAbout": ["Deep Learning", "Ensemble Learning", "Time-Series Forecasting", "Explainable AI", "Predictive Analytics"],
+  "identifier": "https://orcid.org/0000-0002-2856-8365",
+  "sameAs": [
+    "https://orcid.org/0000-0002-2856-8365",
+    "https://scholar.google.com/citations?user=MvU637IAAAAJ",
+    "https://www.linkedin.com/in/sakib9286",
+    "https://www.scopus.com/authid/detail.uri?authorId=58489471900"
+  ]
+}
+</script>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">MS</span>
+      <span class="brand-text">Mohd&nbsp;Sakib<em>PhD</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#grants">Grants &amp; IP</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch colour theme" title="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.5 12h2.6M18.9 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5a8.5 8.5 0 1 0 10.8 10.8Z"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid-lines"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow reveal"><span class="dot"></span> Assistant Professor &middot; UPES University, Dehradun</p>
+      <h1 class="reveal">Mohd <span class="grad">Sakib</span></h1>
+      <p class="hero-role reveal">Ph.D. in Computer Science &middot; School of Computer Science, UPES University</p>
+      <p class="lede reveal">I build decomposition-driven and ensemble deep learning models for time series that are nonlinear and non-stationary. My work spans energy demand, smart grids, sensor systems, and epidemiological forecasting, with a growing focus on explainable and foundation-model approaches.</p>
+      <div class="hero-tags reveal">
+        <span>Ensemble Deep Learning</span>
+        <span>Time-Series Forecasting</span>
+        <span>Explainable AI</span>
+        <span>Predictive Analytics</span>
+      </div>
+      <div class="cta reveal">
+        <a class="btn btn-primary" href="assets/files/Mohd_Sakib_CV.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4.5 19.5h15"/></svg>
+          Download CV
+        </a>
+        <a class="btn" href="mailto:mohd.sakib@ddn.upes.ac.in">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.8 6.5 8.2 6 8.2-6"/></svg>
+          Email
+        </a>
+        <a class="btn" href="https://scholar.google.com/citations?user=MvU637IAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://orcid.org/0000-0002-2856-8365" target="_blank" rel="noopener">ORCID</a>
+        <a class="btn" href="https://www.linkedin.com/in/sakib9286" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <div class="photo-ring">
+        <img src="assets/img/portrait.jpg" width="900" height="900" alt="Portrait of Dr. Mohd Sakib" fetchpriority="high">
+      </div>
+      <div class="badge-float badge-1"><strong>Best Paper</strong><span>IEEE ICECI 2026</span></div>
+      <div class="badge-float badge-2"><strong>PI</strong><span>E-Vision, funded project</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Research indicators">
+  <div class="wrap stat-grid">
+    <div class="stat reveal"><b data-count="235">0</b><span>Citations</span><em>Google Scholar</em></div>
+    <div class="stat reveal"><b data-count="7">0</b><span>h-index</span><em>Google Scholar</em></div>
+    <div class="stat reveal"><b data-count="5">0</b><span>SCIE Articles</span><em>Four in Q1</em></div>
+    <div class="stat reveal"><b data-count="2">0</b><span>Edited Volumes</span><em>IGI Global</em></div>
+    <div class="stat reveal"><b data-count="4">0</b><span>IP Filings</span><em>Two granted</em></div>
+    <div class="stat reveal"><b data-count="8">0</b><span>Journals Reviewed</span><em>Elsevier, Springer, Nature</em></div>
+  </div>
+  <p class="wrap stat-note">Bibliometric indicators as of September 2026.</p>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> About</p>
+    <h2 class="reveal">A researcher working where deep learning meets time</h2>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I am a computer scientist working at the intersection of deep learning and time-series analysis. I completed my Ph.D. at Aligarh Muslim University in 2024 and have more than five years of research experience.</p>
+        <p>My contributions center on decomposition-driven and ensemble deep learning architectures for nonlinear, non-stationary temporal dynamics. I apply them to energy demand, smart grids, and epidemiological surveillance. That work has appeared in five SCIE-indexed journals, four of them Q1, alongside IEEE conference proceedings and book chapters with CRC Press and IGI Global.</p>
+        <p>I co-edited two published IGI Global volumes, with further volumes under proposal at CRC Press and Elsevier, and a single-authored graduate textbook in preparation. I serve as Principal Investigator on an externally funded assistive-technology project that has produced granted registered designs in the United Kingdom and India. I review for eight international journals and supervise undergraduate and postgraduate researchers through to peer-reviewed publication.</p>
+        <div class="chips">
+          <span>CEEMDAN &amp; STL Decomposition</span>
+          <span>Transformer Architectures</span>
+          <span>LSTM / BiLSTM / TCN</span>
+          <span>Genetic Algorithms</span>
+          <span>Grey Wolf Optimizer</span>
+          <span>Bayesian Optimization</span>
+          <span>Anomaly Detection</span>
+          <span>Smart Grids &amp; Energy</span>
+          <span>Epidemiological Forecasting</span>
+        </div>
+      </div>
+      <div class="about-side">
+        <div class="panel reveal">
+          <h3>Education</h3>
+          <ol class="timeline">
+            <li>
+              <span class="when">Apr 2021 &ndash; Dec 2024</span>
+              <strong>Ph.D. in Computer Science</strong>
+              <span class="where">Aligarh Muslim University, Aligarh, India</span>
+              <p>Thesis: <em>An Efficient Ensemble Deep Learning Model for Estimation and Forecasting of Time Series Data</em>. Supervisor: Prof. Suhel Mustajab.</p>
+            </li>
+            <li>
+              <span class="when">Jul 2015 &ndash; Dec 2018</span>
+              <strong>Master of Computer Applications</strong>
+              <span class="where">Aligarh Muslim University &middot; CGPA 7.93/10</span>
+            </li>
+            <li>
+              <span class="when">Jun 2012 &ndash; Jul 2015</span>
+              <strong>Bachelor of Computer Applications</strong>
+              <span class="where">Aligarh Muslim University &middot; 75.6%</span>
+            </li>
+          </ol>
+        </div>
+        <div class="panel reveal">
+          <h3>Appointments</h3>
+          <ol class="timeline">
+            <li>
+              <span class="when">Jun 2025 &ndash; Present</span>
+              <strong>Assistant Professor</strong>
+              <span class="where">School of Computer Science, UPES University, Dehradun</span>
+            </li>
+            <li>
+              <span class="when">Aug 2024 &ndash; Jun 2025</span>
+              <strong>Assistant Professor</strong>
+              <span class="where">Department of Computer Applications, MITS Deemed to be University, Madanapalle</span>
+            </li>
+            <li>
+              <span class="when">Jun 2016 &ndash; Jul 2017</span>
+              <strong>Research Assistant</strong>
+              <span class="where">Centre of Advanced Research in Electrified Transportation (CARET), AMU</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section alt">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> Research</p>
+    <h2 class="reveal">Three lines of work</h2>
+    <p class="section-lede reveal">From the doctoral programme on ensemble forecasting, to a current transformer framework for multi-domain time series, to applied assistive technology built with students and industry.</p>
+    <div class="cards">
+      <article class="card feature reveal">
+        <span class="card-tag now">Current</span>
+        <h3>E<sup>3</sup>-TSF: Dynamic Gating Ensemble Transformers</h3>
+        <p class="card-sub">A Dynamic Gating Ensemble Transformer Framework for Multi-Domain Time Series Forecasting</p>
+        <p>A context-aware ensemble transformer that unifies temporal patch learning with variable-wise interdependence modelling inside a dynamic gating framework. A learnable gating network allocates weights between complementary transformer backbones according to local series characteristics such as trend behaviour, volatility, and cross-variable interaction.</p>
+        <p>The framework is evaluated across heterogeneous domains: energy (ETTh1), traffic (METR-LA), finance (Exchange Rate), and epidemiological forecasting (ILI), with consistent gains over standalone transformers and static ensembles.</p>
+        <ul class="ticks">
+          <li>Under review at <em>Scientific Reports</em> (Nature Portfolio)</li>
+          <li>Four benchmark domains, multiple forecast horizons</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <span class="card-tag">Doctoral</span>
+        <h3>Ensemble Deep Learning for Estimation and Forecasting</h3>
+        <p class="card-sub">Ph.D. programme, Aligarh Muslim University, 2021&ndash;2024</p>
+        <p>Led the programme end to end, from problem formulation through model design, implementation, experimental evaluation, and manuscript preparation.</p>
+        <ul class="ticks">
+          <li>A decomposition-driven hybrid framework integrating CEEMDAN with deep temporal convolution and sequence learning</li>
+          <li>A VAR&ndash;LSTM fusion model combining vector autoregression with deep sequence modelling for multivariate series</li>
+          <li>A genetic-algorithm-optimized ensemble for dynamic feature selection under volatile conditions</li>
+          <li>Attention mechanisms, autoencoder sequence modelling, and hierarchical structures for long-term dependencies</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <span class="card-tag">Applied</span>
+        <h3>E-Vision: Assistive AI for the Visually Impaired</h3>
+        <p class="card-sub">Principal Investigator, externally funded, 2025&ndash;</p>
+        <p>An intelligent assistive application for visually impaired users, funded by Cadre Tech Innovative Solutions LLC and hosted at the School of Computer Science, UPES University.</p>
+        <ul class="ticks">
+          <li>UK Registered Design No. 6538179, granted 16 July 2026</li>
+          <li>Indian Registered Design No. 510366-001, registered 22 July 2026</li>
+          <li>A related TinyML keyword-spotting design is under examination in the UK</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="publications" class="section">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> Publications</p>
+    <h2 class="reveal">Selected and complete record</h2>
+    <p class="section-lede reveal">Six journal articles, four IEEE conference papers, two book chapters, and two edited volumes, with further work accepted or under review. Every entry links to its DOI where one has been issued.</p>
+
+    <div class="filters reveal" role="tablist" aria-label="Filter publications">
+      <button class="chip-btn is-on" data-filter="all">All</button>
+      <button class="chip-btn" data-filter="journal">Journal Articles</button>
+      <button class="chip-btn" data-filter="conference">Conferences</button>
+      <button class="chip-btn" data-filter="chapter">Chapters &amp; Books</button>
+      <button class="chip-btn" data-filter="press">In Press &amp; Under Review</button>
+    </div>
+
+    <ol class="pubs" id="pubList">
+
+      <li class="pub reveal" data-cat="journal">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>CEEMDAN-TCN-AutoLSTM: A Triple-Force Ensemble Using Cross-Stitch Networks for Short-Term Load Forecasting</h3>
+          <p class="authors"><b>Sakib, M.</b>, &amp; Mustajab, S.</p>
+          <p class="venue">Arabian Journal for Science and Engineering</p>
+          <div class="tags"><span class="t-scie">SCIE</span><span class="t-q1">Q1</span><span>IF 2.9</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1007/s13369-025-10398-1" target="_blank" rel="noopener">10.1007/s13369-025-10398-1</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="journal">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>Ensemble deep learning techniques for time series analysis: a comprehensive review, applications, open issues, challenges, and future directions</h3>
+          <p class="authors"><b>Sakib, M.</b>, Mustajab, S., &amp; Alam, M.</p>
+          <p class="venue">Cluster Computing, 28(1)</p>
+          <div class="tags"><span class="t-scie">SCIE</span><span class="t-q1">Q1</span><span>IF 3.6</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1007/s10586-024-04684-0" target="_blank" rel="noopener">10.1007/s10586-024-04684-0</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="journal">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>An ensemble deep learning framework for energy demand forecasting using genetic algorithm-based feature selection</h3>
+          <p class="authors"><b>Sakib, M.</b>, Siddiqui, T., Mustajab, S., Alotaibi, R. M., Alshareef, N. M., &amp; Khan, M. Z.</p>
+          <p class="venue">PLoS One, 20(1)</p>
+          <div class="tags"><span class="t-scie">SCIE</span><span class="t-q1">Q1</span><span>IF 3.7</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1371/journal.pone.0310465" target="_blank" rel="noopener">10.1371/journal.pone.0310465</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="journal">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>Optimizing support vector regression using grey wolf optimizer for enhancing energy efficiency and building prototype architecture</h3>
+          <p class="authors"><b>Sakib, M.</b>, Ahmad, S., Anwar, K., &amp; Saqib, M.</p>
+          <p class="venue">Cluster Computing, 28(1), 60</p>
+          <div class="tags"><span class="t-scie">SCIE</span><span class="t-q1">Q1</span><span>IF 3.6</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1007/s10586-024-04802-y" target="_blank" rel="noopener">10.1007/s10586-024-04802-y</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="journal">
+        <span class="year">2024</span>
+        <div class="pub-body">
+          <h3>Enhanced multi-variate time series prediction through statistical-deep learning integration: the VAR-stacked LSTM model</h3>
+          <p class="authors"><b>Sakib, M.</b>, &amp; Mustajab, S.</p>
+          <p class="venue">SN Computer Science, 5(5), 573</p>
+          <div class="tags"><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1007/s42979-024-02950-x" target="_blank" rel="noopener">10.1007/s42979-024-02950-x</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="journal">
+        <span class="year">2023</span>
+        <div class="pub-body">
+          <h3>Multi-network-based ensemble deep learning model to forecast Ross River virus outbreak in Australia</h3>
+          <p class="authors"><b>Sakib, M.</b>, &amp; Siddiqui, T.</p>
+          <p class="venue">International Journal of Pattern Recognition and Artificial Intelligence, 37(10)</p>
+          <div class="tags"><span class="t-scie">SCIE</span><span>Q3</span><span>IF 1.5</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1142/S0218001423520158" target="_blank" rel="noopener">10.1142/S0218001423520158</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="conference">
+        <span class="year">2026</span>
+        <div class="pub-body">
+          <h3>Long-horizon forecasting for sensor systems: an experimental study using linear and transformer-based models</h3>
+          <p class="authors">Khan, M., <b>Sakib, M.</b>, Siddiqui, T., &amp; Awasthi, S.</p>
+          <p class="venue">2026 Second International Conference on Emerging Computational Intelligence (ICECI), pp. 1&ndash;6, IEEE</p>
+          <div class="tags"><span class="t-award">Best Paper Award</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1109/ICECI69159.2026.11519399" target="_blank" rel="noopener">10.1109/ICECI69159.2026.11519399</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="conference">
+        <span class="year">2024</span>
+        <div class="pub-body">
+          <h3>BiLSTM-based approach for energy demand forecasting and synchronization among smart grids</h3>
+          <p class="authors"><b>Sakib, M.</b>, Mustajab, S., Anwar, K., &amp; Alam, M.</p>
+          <p class="venue">2024 IEEE Third International Conference on Power Electronics, Intelligent Control and Energy Systems (ICPEICES), pp. 969&ndash;974</p>
+          <div class="tags"><span>IEEE</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1109/ICPEICES62430.2024.10719085" target="_blank" rel="noopener">10.1109/ICPEICES62430.2024.10719085</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="conference">
+        <span class="year">2023</span>
+        <div class="pub-body">
+          <h3>Deep learning-based heartbeat classification of 12-lead ECG time series signal</h3>
+          <p class="authors"><b>Sakib, M.</b>, Mustajab, S., &amp; Siddiqui, T.</p>
+          <p class="venue">2023 4th International Conference on Data Analytics for Business and Industry (ICDABI), pp. 273&ndash;278, IEEE</p>
+          <div class="tags"><span>IEEE</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1109/ICDABI60145.2023.10629531" target="_blank" rel="noopener">10.1109/ICDABI60145.2023.10629531</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="conference">
+        <span class="year">2023</span>
+        <div class="pub-body">
+          <h3>Anomaly detection of ECG time series signal using autoencoders neural network</h3>
+          <p class="authors"><b>Sakib, M.</b>, &amp; Siddiqui, T.</p>
+          <p class="venue">2023 7th International Conference on Computing, Communication, Control and Automation (ICCUBEA), pp. 1&ndash;7, IEEE</p>
+          <div class="tags"><span>IEEE</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1109/ICCUBEA58933.2023.10392094" target="_blank" rel="noopener">10.1109/ICCUBEA58933.2023.10392094</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="chapter">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>Mitigating adversarial attacks in industrial cybersecurity through NLP strategies for e-commerce: challenges and emerging trends</h3>
+          <p class="authors">Suganya, S., <b>Sakib, M.</b>, &amp; Malini, M.</p>
+          <p class="venue">Book chapter in <em>AI-Driven Security and Intelligence in Cloud and Internet of Things Systems</em>, IGI Global</p>
+          <div class="tags"><span>Book Chapter</span></div>
+          <a class="doi" href="https://doi.org/10.4018/979-8-3373-7503-8.ch003" target="_blank" rel="noopener">10.4018/979-8-3373-7503-8.ch003</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="chapter">
+        <span class="year">2021</span>
+        <div class="pub-body">
+          <h3>Machine learning-based day-ahead market energy usage bidding for smart microgrids</h3>
+          <p class="authors">Saqib, M., Sahu, S. A., <b>Sakib, M.</b>, &amp; Al-Ammar, E. A.</p>
+          <p class="venue">Book chapter in <em>Electric Vehicle Integration in a Smart Microgrid Environment</em>, pp. 249&ndash;266, CRC Press (Taylor &amp; Francis)</p>
+          <div class="tags"><span>Book Chapter</span><span>Scopus</span></div>
+          <a class="doi" href="https://doi.org/10.1201/9780367423926-10" target="_blank" rel="noopener">10.1201/9780367423926-10</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="chapter">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>AI-Driven Security and Intelligence in Cloud and Internet of Things Systems</h3>
+          <p class="authors">Edited by <b>Mohd Sakib</b>, Muneer Khan, Shantanu Awasthi, &amp; Mohd Vaseem Khan</p>
+          <p class="venue">IGI Global &middot; ISBN13 9798337375038</p>
+          <div class="tags"><span class="t-book">Edited Volume</span></div>
+          <a class="doi" href="https://doi.org/10.4018/979-8-3373-7503-8" target="_blank" rel="noopener">10.4018/979-8-3373-7503-8</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="chapter">
+        <span class="year">2025</span>
+        <div class="pub-body">
+          <h3>AI Advancements in Internet of Things, Smart Healthcare, and Intelligent Devices</h3>
+          <p class="authors">Edited by Muneer Khan, Shantanu Awasthi, <b>Mohd Sakib</b>, &amp; Mohd Vaseem Khan</p>
+          <p class="venue">IGI Global &middot; ISBN13 9798337357270</p>
+          <div class="tags"><span class="t-book">Edited Volume</span></div>
+          <a class="doi" href="https://doi.org/10.4018/979-8-3373-5727-0" target="_blank" rel="noopener">10.4018/979-8-3373-5727-0</a>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="press">
+        <span class="year">2026</span>
+        <div class="pub-body">
+          <h3>E<sup>3</sup>-TSF: A dynamic gated multi-expert transformer framework for robust multi-domain time series forecasting</h3>
+          <p class="authors"><b>Sakib, M.</b>, Fazil, M., Qamar, S., &amp; Khan, M.</p>
+          <p class="venue">Scientific Reports (Nature Portfolio)</p>
+          <div class="tags"><span class="t-review">Under Review</span></div>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="press">
+        <span class="year">2026</span>
+        <div class="pub-body">
+          <h3>Artificial intelligence techniques for cybersecurity: a comprehensive systematic review of methods, applications, challenges, and research directions</h3>
+          <p class="authors">Singh, K., Agarawal, P., &amp; <b>Sakib, M.</b></p>
+          <p class="venue">Journal of Information Security and Applications (Elsevier)</p>
+          <div class="tags"><span class="t-review">Under Review</span></div>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="press">
+        <span class="year">2026</span>
+        <div class="pub-body">
+          <h3>Explainable self-selecting ensemble deep learning for sustainable multi-domain forecasting</h3>
+          <p class="authors"><b>Sakib, M.</b>, Khan, M., &amp; Awasthi, S.</p>
+          <p class="venue">5th Elsevier International Conference on Machine Learning &amp; Data Engineering (ICMLDE 5.0), Dehradun, 27&ndash;28 November 2026. To appear in <em>Procedia Computer Science</em></p>
+          <div class="tags"><span class="t-accept">Accepted</span><span>Scopus</span></div>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="press">
+        <span class="year">2026</span>
+        <div class="pub-body">
+          <h3>A hybrid soft computing framework for intelligent time-series forecasting using STL decomposition and Bayesian-optimized deep learning</h3>
+          <p class="authors"><b>Sakib, M.</b>, &amp; Khan, M.</p>
+          <p class="venue">Book chapter in <em>Soft Computing for Web Intelligence: Theory and Applications</em>, CRC Press (Taylor &amp; Francis)</p>
+          <div class="tags"><span class="t-accept">Accepted</span></div>
+        </div>
+      </li>
+
+      <li class="pub reveal" data-cat="press">
+        <span class="year">2026</span>
+        <div class="pub-body">
+          <h3>Security-aware multi-view graph contrastive learning for network intrusion detection</h3>
+          <p class="authors">Ranjan, K., Garg, K., &amp; <b>Sakib, M.</b></p>
+          <p class="venue">2026 International Conference on Advancement in Cyber Security and Digital Forensics (ICACSDF), UPES Dehradun, 11&ndash;12 September 2026</p>
+          <div class="tags"><span class="t-accept">Presented</span></div>
+        </div>
+      </li>
+
+    </ol>
+
+    <div class="inprep">
+      <div class="panel reveal">
+        <h3>Authored textbook in preparation</h3>
+        <p><strong>Foundation Models and the Structure of Time: An Independent Benchmark of Pretrained, Decomposition, and Ensemble Forecasting.</strong></p>
+        <p>Single-authored graduate textbook, fifteen chapters across roughly 375 pages, with companion benchmark code and course materials. Proposal to be submitted to Oxford University Press.</p>
+      </div>
+      <div class="panel reveal">
+        <h3>Edited volumes in progress</h3>
+        <p><strong>Artificial Intelligence for Industry 5.0 Engineering Systems: Deep Learning, IoT, and Intelligent Automation.</strong> CRC Press (Taylor &amp; Francis). Revised proposal submitted at the editors' request.</p>
+        <p><strong>Intelligent IoT: AI-Driven Sensing, Connectivity, and Control.</strong> Elsevier. Eighteen commissioned chapters planned, proposal submitted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="grants" class="section alt">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> Grants &amp; Intellectual Property</p>
+    <h2 class="reveal">Funded work and protected designs</h2>
+
+    <article class="grant reveal">
+      <div class="grant-main">
+        <span class="card-tag now">Principal Investigator</span>
+        <h3>E-Vision: An Intelligent Assistive Application for the Visually Impaired</h3>
+        <p>Funded by Cadre Tech Innovative Solutions LLC, Delaware, USA, and hosted at the School of Computer Science, UPES University, Dehradun. The project has already produced two granted design registrations across two jurisdictions.</p>
+      </div>
+      <dl class="grant-meta">
+        <div><dt>Sanctioned</dt><dd>INR 2,00,000</dd></div>
+        <div><dt>Awarded</dt><dd>September 2025</dd></div>
+        <div><dt>Reference</dt><dd>CT_US250102</dd></div>
+        <div><dt>Status</dt><dd class="ok">Approved for funding</dd></div>
+      </dl>
+    </article>
+
+    <div class="cards ip-cards">
+      <article class="card reveal">
+        <span class="card-tag ok">Granted</span>
+        <h3>UK Registered Design No. 6538179</h3>
+        <p class="card-sub">AI Enabled Wearable Device for Blind Individuals</p>
+        <p>Registered 09 July 2026, granted 16 July 2026. Locarno Class 16, Subclass 06 (Optical Articles).</p>
+        <p class="fine">Proprietors: Muneer Khan, Mohd Sakib, Vinay Rishiwal.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-tag ok">Registered</span>
+        <h3>Indian Registered Design No. 510366-001</h3>
+        <p class="card-sub">AI-Enabled Wearable Device for Visually Impaired Persons</p>
+        <p>Registered 22 July 2026. Certificate issued 03 September 2026 by the Patent Office, Government of India under the Designs Act, 2000.</p>
+        <p class="fine">Proprietors: Muneer Khan, Mohd Sakib, Ashutosh Kumar Bhatt.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-tag">Under examination</span>
+        <h3>UK Design Application No. 6545206</h3>
+        <p class="card-sub">A Low-Power On-Device Keyword-Spotting System for AI-Powered Patient Assistance Using TinyML</p>
+        <p>Filed 07 August 2026.</p>
+        <p class="fine">Applicants: Muneer Khan, Mohd Sakib, Mridul Pandey, Rajeev Kumar, Vinay Rishiwal.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-tag">Under filing</span>
+        <h3>ChronoAnom-X</h3>
+        <p class="card-sub">Explainable Temporal Intelligence Software for Time-Series Anomaly Discovery</p>
+        <p>Software copyright filed through the Intellectual Property Rights cell, UPES University. Built in Python with pandas, NumPy, scikit-learn, statsmodels, and Matplotlib.</p>
+        <p class="fine">Authors: Mohd Sakib, Muneer Khan.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="teaching" class="section">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> Teaching &amp; Supervision</p>
+    <h2 class="reveal">Students first, publications with them</h2>
+    <div class="two-col">
+      <div class="panel reveal">
+        <h3>Supervision &amp; mentoring</h3>
+        <ul class="ticks">
+          <li>Supervise undergraduate and postgraduate research at UPES University, previously at MITS, from problem formulation and experimental design through to peer-reviewed publication. Four student researchers have co-authored papers accepted or under review at international venues.</li>
+          <li>Guided <strong>Kushagra Ranjan</strong> and <strong>Kavya Garg</strong> on multi-view graph contrastive learning for network intrusion detection. The resulting paper was presented at ICACSDF 2026.</li>
+          <li>Guided <strong>Krishnanand Singh</strong> and <strong>Pratik Agarawal</strong> on a systematic review of AI techniques for cybersecurity, now under review at <em>Journal of Information Security and Applications</em>.</li>
+          <li>Mentor student teams in reproducible experimental practice, scientific writing, and responding to peer review.</li>
+        </ul>
+      </div>
+      <div class="panel reveal">
+        <h3>Courses taught</h3>
+        <ul class="courses">
+          <li><span>Statistics and Analysis</span><em>B.Tech. 6th Sem, 2026</em></li>
+          <li><span>Data Structures and Algorithms</span><em>B.Tech. 2nd Sem, 2026</em></li>
+          <li><span>Linux Laboratory</span><em>B.Tech. 1st Sem, 2025</em></li>
+          <li><span>Design and Analysis of Algorithms</span><em>B.Sc. 3rd Sem, 2025</em></li>
+          <li><span>Artificial Intelligence, Theory &amp; Lab</span><em>MCA 2nd Sem, 2025</em></li>
+          <li><span>Deep Learning</span><em>MCA 3rd Sem, 2024</em></li>
+          <li><span>Database Management Systems Lab</span><em>MCA 1st Sem, 2024</em></li>
+          <li><span>Data Structures and Algorithms, Theory &amp; Lab</span><em>MCA 1st Sem, 2024</em></li>
+        </ul>
+        <p class="fine">Two appreciation letters from the Head of Department at MITS for excellence in teaching, with student feedback of 4.70/5 and 4.77/5 in 2024&ndash;25.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="service" class="section alt">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> Awards &amp; Service</p>
+    <h2 class="reveal">Recognition and peer review</h2>
+    <div class="two-col">
+      <div class="panel reveal">
+        <h3>Achievements &amp; awards</h3>
+        <ul class="ticks">
+          <li><strong>Best Paper Award</strong>, 2026 Second International Conference on Emerging Computational Intelligence (ICECI), IEEE Conference ID 69159X.</li>
+          <li>Qualified the <strong>UGC NET</strong> examination in Computer Science twice, December 2018 and December 2019.</li>
+          <li>Member, IEEE and IEEE Computer Society. Life Member, Indian Society for Technical Education since 2025.</li>
+          <li><strong>UGC Non-NET Fellowship</strong> throughout the Ph.D. programme, and a University Merit Scholarship in 2017&ndash;2018.</li>
+          <li>Springer Nature reviewer certificates for <strong>eleven manuscripts in 2026</strong>: Scientific Reports (3), Cluster Computing (4), Signal, Image and Video Processing (2), Journal of Big Data (1), Discover Artificial Intelligence (1).</li>
+          <li>Certificates of appreciation as Reviewer and Presenter, ICACSDF 2026, UPES, September 2026.</li>
+          <li><strong>Jury Member</strong>, Smart India Hackathon 2026 internal round, UPES Dehradun, a Ministry of Education initiative.</li>
+        </ul>
+      </div>
+      <div class="panel reveal">
+        <h3>Reviewing services</h3>
+        <p class="sub-label">Journals</p>
+        <div class="chips">
+          <span>Computers in Biology and Medicine</span>
+          <span>Scientific Reports</span>
+          <span>Cluster Computing</span>
+          <span>Signal, Image and Video Processing</span>
+          <span>Electrical Engineering</span>
+          <span>Journal of Big Data</span>
+          <span>Discover Artificial Intelligence</span>
+          <span>IJUFKS</span>
+        </div>
+        <p class="sub-label">Conferences</p>
+        <p>Technical Program Committee Member for ICIESTR-2024, IIRA 5.0, and ICECI 2026. Reviewer for CICTN-2025, ICDT-2025, and ICACSDF 2026.</p>
+        <p class="sub-label">Academic activities</p>
+        <ul class="ticks tight">
+          <li>Criterion In-Charge for National Board of Accreditation documentation and compliance.</li>
+          <li>Students' Holistic Activities Coordinator and AICTE-PARAKH Coordinator, MITS.</li>
+          <li>Co-Convenor and Organizer of two five-day Faculty Development Programmes on AI for problem solving and AI in cybersecurity.</li>
+          <li>Editorial Board Member and Technical Reviewer for <em>Advancing Cybersecurity in Smart Factories Through Autonomous Robotic Defenses</em>, IGI Global, February 2025.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel skills reveal">
+      <h3>Technical toolkit</h3>
+      <div class="skill-grid">
+        <div><h4>Languages</h4><p>Python, SQL</p></div>
+        <div><h4>Deep learning</h4><p>PyTorch, TensorFlow, Keras, Hugging Face Transformers</p></div>
+        <div><h4>ML &amp; scientific computing</h4><p>scikit-learn, NumPy, pandas, SciPy, statsmodels</p></div>
+        <div><h4>Time-series modelling</h4><p>CEEMDAN/EEMD, STL, VAR, ARIMA, TCN, LSTM/BiLSTM, Transformers</p></div>
+        <div><h4>Optimization</h4><p>Genetic algorithms, Grey Wolf Optimizer, Bayesian optimization</p></div>
+        <div><h4>Environment</h4><p>MySQL, Git, LaTeX, Linux, Matplotlib</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="wrap">
+    <p class="eyebrow reveal"><span class="line"></span> Contact</p>
+    <h2 class="reveal">Open to collaboration</h2>
+    <p class="section-lede reveal">I welcome collaboration on time-series forecasting, ensemble and foundation models, and applied AI for energy, health, and assistive technology. Research students are welcome to write with a short note about their interests.</p>
+
+    <div class="contact-grid">
+      <div class="panel reveal">
+        <h3>Get in touch</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="c-label">Institutional email</span>
+            <a href="mailto:mohd.sakib@ddn.upes.ac.in">mohd.sakib@ddn.upes.ac.in</a>
+            <button class="copy" data-copy="mohd.sakib@ddn.upes.ac.in" aria-label="Copy institutional email">Copy</button>
+          </li>
+          <li>
+            <span class="c-label">Personal email</span>
+            <a href="mailto:msakib.cs@gmail.com">msakib.cs@gmail.com</a>
+            <button class="copy" data-copy="msakib.cs@gmail.com" aria-label="Copy personal email">Copy</button>
+          </li>
+          <li>
+            <span class="c-label">Office</span>
+            <span class="c-plain">School of Computer Science, UPES University, Dehradun, India 248007</span>
+          </li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:mohd.sakib@ddn.upes.ac.in">Send an email</a>
+          <a class="btn" href="assets/files/Mohd_Sakib_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <h3>Profiles</h3>
+        <ul class="profiles">
+          <li><a href="https://scholar.google.com/citations?user=MvU637IAAAAJ" target="_blank" rel="noopener"><strong>Google Scholar</strong><span>235 citations &middot; h-index 7</span></a></li>
+          <li><a href="https://orcid.org/0000-0002-2856-8365" target="_blank" rel="noopener"><strong>ORCID</strong><span>0000-0002-2856-8365</span></a></li>
+          <li><a href="https://www.scopus.com/authid/detail.uri?authorId=58489471900" target="_blank" rel="noopener"><strong>Scopus</strong><span>Author ID 58489471900</span></a></li>
+          <li><a href="https://www.linkedin.com/in/sakib9286" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>in/sakib9286</span></a></li>
+        </ul>
+      </div>
+
+      <div class="panel reveal">
+        <h3>References</h3>
+        <ul class="refs">
+          <li><strong>Prof. Tamanna Siddiqui</strong><span>Professor, Department of Computer Science, Aligarh Muslim University</span><a href="mailto:t.siddiqui.cs@amu.ac.in">t.siddiqui.cs@amu.ac.in</a></li>
+          <li><strong>Prof. Suhel Mustajab</strong><span>Professor, Department of Computer Science, Aligarh Muslim University</span><a href="mailto:s.mustajab.cs@amu.ac.in">s.mustajab.cs@amu.ac.in</a></li>
+          <li><strong>Dr. Mohd Fazil</strong><span>Assistant Professor, College of Computer and Information Sciences, Imam Mohammad Ibn Saud Islamic University, Riyadh</span><a href="mailto:mfazil@imamu.edu.sa">mfazil@imamu.edu.sa</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>Dr. Mohd Sakib</strong>
+      <span>School of Computer Science, UPES University, Dehradun, India</span>
+    </div>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="assets/files/Mohd_Sakib_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="mailto:mohd.sakib@ddn.upes.ac.in">Email</a>
+    </div>
+    <p class="fine">&copy; <span id="yr">2026</span> Mohd Sakib. Last updated September 2026.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
