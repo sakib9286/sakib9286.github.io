@@ -89,13 +89,14 @@
   var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
   function runCount(el) {
     var target = parseInt(el.getAttribute('data-count'), 10) || 0;
-    if (reduceMotion) { el.textContent = target; return; }
+    var suffix = el.getAttribute('data-suffix') || '';
+    if (reduceMotion) { el.textContent = target + suffix; return; }
     var duration = 1300, start = null;
     function step(ts) {
       if (start === null) start = ts;
       var p = Math.min((ts - start) / duration, 1);
       var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(target * eased);
+      el.textContent = Math.round(target * eased) + suffix;
       if (p < 1) window.requestAnimationFrame(step);
     }
     window.requestAnimationFrame(step);

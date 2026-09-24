@@ -113,12 +113,11 @@ p { margin: 0 0 1rem; color: var(--text-2); }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); gap: 1rem; }
 
-.brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; font-weight: 600; }
-.brand-mark {
-  width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px;
-  background: var(--accent-line); color: #05121a; font-family: var(--font-display);
-  font-weight: 700; font-size: .92rem; letter-spacing: -.02em;
-}
+.brand { display: flex; align-items: center; gap: .55rem; text-decoration: none; font-weight: 600; }
+.brand-mark { width: 40px; height: 40px; object-fit: contain; display: block; flex: none; }
+.mark-dark { display: none; }
+[data-theme="dark"] .mark-light { display: none; }
+[data-theme="dark"] .mark-dark { display: block; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.12; font-size: .95rem; }
 .brand-text em { font-style: normal; font-size: .64rem; letter-spacing: .18em; color: var(--muted); text-transform: uppercase; }
 
