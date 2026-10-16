@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,12 +25,25 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png?v=2">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#070B14">
+<meta name="theme-color" content="#F5FAFF">
+
+<script>
+/* Restore an explicit choice before painting; this redesign defaults to light. */
+(function () {
+  try {
+    var theme = localStorage.getItem('sakib-theme-v2');
+    if (theme === 'dark' || theme === 'light') {
+      document.documentElement.setAttribute('data-theme', theme);
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#070B14' : '#F5FAFF';
+    }
+  } catch (e) { /* Keep the default when storage is unavailable. */ }
+})();
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=sky-glass-20261017">
 <noscript><style>.reveal{opacity:1!important;transform:none!important}.nav-links{position:static!important;opacity:1!important;pointer-events:auto!important;transform:none!important}</style></noscript>
 
 <script type="application/ld+json">
@@ -699,6 +712,6 @@
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
 </button>
 
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=sky-glass-20261017"></script>
 </body>
 </html>

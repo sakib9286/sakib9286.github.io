@@ -6,19 +6,23 @@
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- theme ---------- */
-  var stored = null;
-  try { stored = localStorage.getItem('theme'); } catch (e) { /* private mode */ }
-  if (stored !== 'light' && stored !== 'dark') {
-    stored = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-  }
-  root.setAttribute('data-theme', stored);
-
   var toggle = document.getElementById('themeToggle');
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    var themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.content = theme === 'dark' ? '#070B14' : '#F5FAFF';
+    if (toggle) {
+      var label = 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme';
+      toggle.setAttribute('aria-label', label);
+      toggle.setAttribute('title', label);
+    }
+  }
+  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
   if (toggle) {
     toggle.addEventListener('click', function () {
       var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+      applyTheme(next);
+      try { localStorage.setItem('sakib-theme-v2', next); } catch (e) { /* ignore */ }
     });
   }
 
