@@ -16,6 +16,8 @@
   --glass-sheen: none;
   --glass-blur: saturate(130%) blur(10px);
   --glass-blur-sm: saturate(125%) blur(7px);
+  --grid: rgba(255, 255, 255, 0.055);
+  --grid-major: rgba(255, 255, 255, 0.085);
   --glass-top: inset 0 1px 0 rgba(255, 255, 255, 0.10);
   --glass-shadow: 0 12px 30px -22px rgba(0, 0, 0, 0.7);
   --nav-glass: 82%;
@@ -45,14 +47,16 @@
   --border: rgba(15, 23, 42, 0.11);
   --border-strong: rgba(15, 23, 42, 0.26);
   /* glass */
-  --glass: rgba(255, 255, 255, 0.74);
-  --glass-hover: #FFFFFF;
+  --glass: rgba(255, 255, 255, 0.70);
+  --glass-hover: rgba(255, 255, 255, 0.92);
+  --grid: rgba(15, 23, 42, 0.062);
+  --grid-major: rgba(15, 23, 42, 0.095);
   --glass-border: rgba(15, 23, 42, 0.11);
   --glass-sheen: none;
   --glass-top: inset 0 1px 0 rgba(255, 255, 255, 0.95);
   --glass-shadow: 0 1px 2px rgba(15, 23, 42, .05), 0 10px 26px -18px rgba(15, 23, 42, .20);
   --nav-glass: 80%;
-  --band: #F7F9FC;
+  --band: rgba(241, 245, 250, 0.72);
   --text: #0B1220;
   --text-2: #33415C;
   --muted: #5A6A82;
@@ -580,4 +584,61 @@ p { margin: 0 0 1rem; color: var(--text-2); }
   }
   .stat { background: var(--bg-2); }
   body::before { opacity: .35; }
+}
+
+/* ---------- page texture: blueprint grid behind everything ---------- */
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background-image:
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 184px 184px, 184px 184px, 46px 46px, 46px 46px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 76%, rgba(0,0,0,.42) 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 76%, rgba(0,0,0,.42) 100%);
+}
+
+/* a grid-filled card peeking out behind the portrait */
+.hero-photo::before {
+  content: ''; position: absolute; z-index: 0;
+  width: 82%; height: 82%; right: -9%; bottom: -7%;
+  border: 1px solid var(--border); border-radius: 26px;
+  background-color: var(--surface-2);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 23px 23px;
+}
+.photo-ring { position: relative; z-index: 1; }
+.badge-float { z-index: 3; }
+
+/* cards get more presence and a clearer lift */
+.card, .panel { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease; }
+.card:hover, .panel:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent) 42%, transparent);
+  box-shadow: 0 2px 4px rgba(15, 23, 42, .05), 0 18px 40px -22px rgba(15, 23, 42, .30);
+}
+.pub:hover { border-color: color-mix(in srgb, var(--accent) 42%, transparent); }
+
+/* section headings sit on a short rule */
+.section > .wrap > h2 { position: relative; padding-top: .75rem; }
+.section > .wrap > h2::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 56px; height: 3px;
+  border-radius: 3px; background: var(--accent-line);
+}
+
+/* stat strip reads as one panel of cells */
+.stat-grid { overflow: hidden; }
+.stat { position: relative; }
+.stat::after {
+  content: ''; position: absolute; inset: auto 0 0 0; height: 2px;
+  background: var(--accent-line); transform: scaleX(0); transition: transform .3s ease;
+}
+.stat:hover::after { transform: scaleX(1); }
+
+@media (max-width: 680px) {
+  body::before { background-size: 138px 138px, 138px 138px, 34px 34px, 34px 34px; }
+  .hero-photo::before { display: none; }
 }
