@@ -10,14 +10,16 @@
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
     var themeColor = document.querySelector('meta[name="theme-color"]');
-    if (themeColor) themeColor.content = theme === 'dark' ? '#070B14' : '#F5FAFF';
+    if (themeColor) themeColor.content = theme === 'dark' ? '#0B1017' : '#FFFFFF';
     if (toggle) {
       var label = 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' theme';
       toggle.setAttribute('aria-label', label);
       toggle.setAttribute('title', label);
     }
   }
-  applyTheme(root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+  var saved = null;
+  try { saved = localStorage.getItem('sakib-theme-v2'); } catch (e) { /* private mode */ }
+  applyTheme(saved === 'dark' ? 'dark' : 'light');
   if (toggle) {
     toggle.addEventListener('click', function () {
       var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';

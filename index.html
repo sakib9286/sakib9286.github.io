@@ -25,7 +25,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png?v=2">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#F5FAFF">
+<meta name="theme-color" content="#FFFFFF">
 
 <script>
 /* Restore an explicit choice before painting; this redesign defaults to light. */
@@ -34,7 +34,7 @@
     var theme = localStorage.getItem('sakib-theme-v2');
     if (theme === 'dark' || theme === 'light') {
       document.documentElement.setAttribute('data-theme', theme);
-      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#070B14' : '#F5FAFF';
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#0B1017' : '#FFFFFF';
     }
   } catch (e) { /* Keep the default when storage is unavailable. */ }
 })();
@@ -104,11 +104,6 @@
 
 <main id="main">
 <section class="hero" id="top">
-  <div class="hero-bg" aria-hidden="true">
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="grid-lines"></div>
-  </div>
   <div class="wrap hero-inner">
     <div class="hero-text">
       <p class="eyebrow reveal"><span class="dot"></span> Assistant Professor &middot; UPES University, Dehradun</p>
